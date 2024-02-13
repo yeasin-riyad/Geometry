@@ -76,18 +76,33 @@
                     </div>
                 </div>
 
-                <!--  -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                <!-- Parallelogram -->
+
+                <div class="card w-96 bg-base-100 shadow-xl parallel">
+                    <figure><img src="geometry-genius/images/parallelogram.png" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area(A)=b*h</p>
+                        <div class="">
+                            <input class="w-24 text-2xl p-2 rounded-sm outline-none" name="" type="string" id="base-input"
+                                placeholder="base">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input class="w-24 text-2xl p-2 rounded-sm outline-none" type="string" name=""
+                                id="height-input" placeholder="height">
+                            <span>cm</span>
+                        </div>
+                           <!-- Display parallel Area -->
+
+                           <div>
+                            <span>Area : <span id="ParallelArea"></span><span> CM<sup>2</sup></span></span>
+
+                        </div>
+                        <div class="card-actions ">
+                            <button onclick="parallelCalculate()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
+               
                 <!--  -->
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -111,8 +126,11 @@
         </div>
     </main>
 
+
+
     <script src="js/triangleCalculate.js"></script>
     <script src="js/rectangleCalculate.js"></script>
+    <script src="js/parallelCalculate.js"></script>
 </body>
 
 </html>
